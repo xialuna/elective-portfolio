@@ -1,6 +1,7 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
 
 export const Hero = () => {
 	return (
@@ -44,6 +45,10 @@ export const Hero = () => {
 						I&apos;m a Software Developer focused on building user-focused
 						interfaces
 					</p>
+
+					<a href="#about">
+						<MagicButton title="Explore Portfolio" />
+					</a>
 				</div>
 			</div>
 		</div>
