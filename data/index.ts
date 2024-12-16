@@ -8,17 +8,15 @@ export const coursework = [
 	{
 		id: 1,
 		title: "Midterms",
-		des: "Lorem Ipsum",
-		img: "/globe.svg",
-		iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+		des: "This contains all assignments, activities, reflection, and exam during our midterm period.",
+		period: "1st term",
 		link: "#",
 	},
 	{
 		id: 2,
 		title: "Finals",
-		des: "Lorem Ipsum",
-		img: "/globe.svg",
-		iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+		des: "This contains all quizzes, acivities, final exam, and reflection during our finals period.",
+		period: "2nd term",
 		link: "#",
 	},
 ];
