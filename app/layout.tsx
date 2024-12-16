@@ -9,11 +9,6 @@ const poppins = Poppins({
 	weight: ["400", "500", "600", "700"],
 });
 
-const inter = Inter({
-	variable: "--font-inter",
-	subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
 	title: "Xian's Elective Portfolio",
 	description:
@@ -27,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${poppins.variable} ${inter.variable} antialiased`}>
+			<body className={`${poppins.variable} antialiased`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="dark" //Change system to dark
