@@ -20,15 +20,15 @@
 		],
 		"paths": {
 			"@/*": ["./*"]
-		},
-		"types": ["@react-three/fiber", "three"]
+		}
 	},
 	"include": [
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
 		".next/types/**/*.ts",
-		"next.config.js"
+		"next.config.js",
+		"types/react-three.d.ts"
 	],
 	"exclude": ["node_modules"]
 }
