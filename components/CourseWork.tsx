@@ -3,14 +3,35 @@ import React from "react";
 import { PinContainer } from "./ui/PinContainer";
 import { CardSpotlight } from "./ui/CardSpotlight";
 import { HoverBorderGradient } from "./ui/HoverBorder";
+import { TypewriterEffect } from "./ui/TypeWriterEffect";
 
 const CourseWork = () => {
+	const words = [
+		{
+			text: "A",
+		},
+		{
+			text: "showcase",
+		},
+		{
+			text: "of",
+		},
+		{
+			text: "my",
+		},
+		{
+			text: "courseworks",
+			className: "text-purple",
+		},
+	];
 	return (
 		<div className="py-20">
-			<h1 className="heading">
-				A showcase of my <span className="text-wrap purple">coursework</span>
-			</h1>
-			<div className="flex flex-wrap items-center justify-center p-4 gap-16 sm:gap-1">
+			<div className="relative">
+				<TypewriterEffect words={words} />
+			</div>
+
+			{/* CARDS */}
+			<div className="flex flex-wrap items-center justify-center gap-20 sm:gap-4 -m-5">
 				{coursework.map(({ id, title, des, period, link }) => (
 					<div
 						key={id}

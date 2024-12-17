@@ -11,7 +11,6 @@ export default function Home() {
 					navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]}
 				/>
 				<Hero />
-				<Hero />
 				<CourseWork />
 			</div>
 		</main>

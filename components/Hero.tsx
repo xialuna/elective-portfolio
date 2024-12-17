@@ -22,10 +22,7 @@ export const Hero = () => {
 			</div>
 
 			{/* GRID */}
-			<div
-				className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3
-            ] bg-grid-white/[0.02] flex items-center justify-center absolute top-0 left-0"
-			>
+			<div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.02] bg-grid-white/[0.01] flex items-center justify-center absolute top-0 left-0">
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 			</div>
 
