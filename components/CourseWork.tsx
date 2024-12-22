@@ -37,7 +37,7 @@ const CourseWork = () => {
 						key={id}
 						className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
 					>
-						<PinContainer title="Explore" href="">
+						<PinContainer title="Explore" href={link}>
 							<CardSpotlight className="w-96">
 								<div className="flex flex-col gap-4 ">
 									<p className="text-3xl font-bold relative z-20 mt-2">

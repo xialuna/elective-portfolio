@@ -10,13 +10,13 @@ export const coursework = [
 		title: "Midterms",
 		des: "This contains all assignments, activities, reflection, and exam during our midterm period.",
 		period: "1st term",
-		link: "#",
+		link: "/midterms",
 	},
 	{
 		id: 2,
 		title: "Finals",
 		des: "This contains all quizzes, acivities, final exam, and reflection during our finals period.",
 		period: "2nd term",
-		link: "#",
+		link: "/finals",
 	},
 ];
