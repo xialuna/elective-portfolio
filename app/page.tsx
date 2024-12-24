@@ -10,7 +10,12 @@ export default function Home() {
 				<FloatingNav
 					navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]}
 				/>
-				<Hero />
+				<Hero
+					tertiaryHeading="ELECT IT-E1 Portfolio | PUP-Manila"
+					heading="Hi, I'm Xian Cheng"
+					subHeading="I'm a Software Developer focused on building user-focused
+interfaces"
+				/>
 				<CourseWork />
 			</div>
 		</main>

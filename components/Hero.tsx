@@ -3,7 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 
-export const Hero = () => {
+export const Hero = ({ heading, subHeading, tertiaryHeading }) => {
 	return (
 		<div className="pb-20 pt-36">
 			{/* SPOTLIGHT*/}
@@ -14,7 +14,7 @@ export const Hero = () => {
 				/>
 
 				<Spotlight
-					className="top-10 left-full h=[80vh] w-[50vw]"
+					className="top-10 left-full h-[80vh] w-[50vw]"
 					fill="purple"
 				/>
 
@@ -30,17 +30,16 @@ export const Hero = () => {
 			<div className="flex justify-center relative my-20 z-10">
 				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
 					<h2 className="uppercase tracking-widest text-xs text] flex--center text-white max-w-80">
-						ELECT IT-E1 Portfolio | PUP-Manila
+						{tertiaryHeading}
 					</h2>
 
 					<TextGenerateEffect
 						className="text-center text-[40px] md:text-5xl lg:text-6xl"
-						words="Hi, I'm Xian Hui Cheng"
+						words={heading}
 					/>
 
 					<p className="text-center md-tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-						I&apos;m a Software Developer focused on building user-focused
-						interfaces
+						{subHeading}
 					</p>
 
 					<a href="#about">
