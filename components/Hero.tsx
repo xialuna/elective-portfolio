@@ -3,7 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 
-export const Hero = ({ heading, subHeading, tertiaryHeading }) => {
+export const Hero = ({ heading, subHeading, tertiaryHeading, buttonTitle }) => {
 	return (
 		<div className="pb-20 pt-36">
 			{/* SPOTLIGHT*/}
@@ -43,7 +43,7 @@ export const Hero = ({ heading, subHeading, tertiaryHeading }) => {
 					</p>
 
 					<a href="#about">
-						<MagicButton title="Explore Portfolio" />
+						<MagicButton title={buttonTitle} />
 					</a>
 				</div>
 			</div>

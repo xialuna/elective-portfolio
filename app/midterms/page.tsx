@@ -10,6 +10,7 @@ export default function Midterms() {
 					subHeading="This contains all assignments, activities, reflection, and exam
 						during our midterm period."
 					tertiaryHeading="1st Term"
+					buttonTitle="View Compilation"
 				/>
 			</div>
 		</main>

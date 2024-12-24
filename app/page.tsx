@@ -13,8 +13,8 @@ export default function Home() {
 				<Hero
 					tertiaryHeading="ELECT IT-E1 Portfolio | PUP-Manila"
 					heading="Hi, I'm Xian Cheng"
-					subHeading="I'm a Software Developer focused on building user-focused
-interfaces"
+					subHeading="I'm a Software Developer focused on building user-focused interfaces"
+					buttonTitle="Explore Portfolio"
 				/>
 				<CourseWork />
 			</div>

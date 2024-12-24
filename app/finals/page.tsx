@@ -9,6 +9,7 @@ export default function Finals() {
 					heading="Finals Compilation"
 					subHeading="This contains all quizzes, acivities, final exam, and reflection during our finals period."
 					tertiaryHeading="2nd Term"
+					buttonTitle="View Compilation"
 				/>
 			</div>
 		</main>
