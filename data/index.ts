@@ -1,3 +1,5 @@
+import midterms from "./midterms.json";
+
 export const navItems = [
 	{ name: "About", link: "#about" },
 	{ name: "CourseWork", link: "#coursework" },
@@ -20,3 +22,5 @@ export const coursework = [
 		link: "/finals",
 	},
 ];
+
+export { midterms };

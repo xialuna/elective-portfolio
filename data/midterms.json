@@ -1,0 +1,76 @@
+{
+	"assignments": [
+		{
+			"id": 1,
+			"label": "Assignment 1",
+			"title": "Data Science",
+			"date": "2024-10-02",
+			"grade": "19/20",
+			"reflection": "In this assignment, I gained foundational knowledge in data science, including understanding the principles and importance of data in decision-making processes."
+		},
+		{
+			"id": 2,
+			"label": "Assignment 2",
+			"title": "Operators",
+			"date": "2024-10-19",
+			"grade": "20/20",
+			"reflection": "This assignment helped me to deeply understand the use of operators in R, allowing me to effectively manipulate and analyze data using various operations."
+		}
+	],
+	"activities": [
+		{
+			"id": 1,
+			"label": "All About Me",
+			"title": "Introduction",
+			"type": "Individual Work",
+			"date": "2024-09-29",
+			"grade": "20/20",
+			"reflection": "This activity was a great starting point to reflect on my personal journey and goals in data science, setting a foundation for future learning."
+		},
+		{
+			"id": 2,
+			"label": "Activity 1",
+			"title": "Leveraging Big Data and Data Science",
+			"type": "Individual Work",
+			"date": "2024-10-14",
+			"grade": "48/50",
+			"reflection": "Through this activity, I explored the potential of big data and the role of data science in solving real-world problems. It enhanced my ability to understand data at scale."
+		},
+		{
+			"id": 3,
+			"label": "Activity 3",
+			"title": "Working with Vectors and Data Frames",
+			"type": "Individual",
+			"date": "2024-11-23",
+			"grade": "- / 20",
+			"reflection": "This activity introduced me to the fundamentals of handling data structures like vectors and data frames in R, which are essential for data manipulation."
+		},
+		{
+			"id": 4,
+			"label": "Activity 4",
+			"title": "Manipulating and Merging Data",
+			"type": "Individual",
+			"date": "2024-11-23",
+			"grade": "- / 20",
+			"reflection": "I learned key techniques for manipulating and merging datasets in R, enabling me to prepare data for analysis more efficiently."
+		},
+		{
+			"id": 5,
+			"label": "Activity 5",
+			"title": "Using Built-in Functions and Control Structures",
+			"type": "Individual",
+			"date": "2024-11-23",
+			"grade": "- / 20",
+			"reflection": "This activity helped me to understand the use of built-in functions and control structures in R, which are critical for writing efficient and reusable code."
+		},
+		{
+			"id": 6,
+			"label": "Activity 6",
+			"title": "Using APPLY Family FUNCTIONS",
+			"type": "Individual",
+			"date": "2024-11-23",
+			"grade": "- / 20",
+			"reflection": "Through this activity, I explored the APPLY family of functions in R, which streamlined repetitive tasks and improved my programming efficiency."
+		}
+	]
+}

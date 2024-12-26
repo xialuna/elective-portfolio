@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import MidtermsWork from "@/components/MidtermsWork";
 import React from "react";
 
 export default function Midterms() {
@@ -9,9 +10,11 @@ export default function Midterms() {
 					heading="Midterms Compilation"
 					subHeading="This contains all assignments, activities, reflection, and exam
 						during our midterm period."
-					tertiaryHeading="1st Term"
+					tertiaryHeading="First Term"
 					buttonTitle="View Compilation"
 				/>
+
+				<MidtermsWork />
 			</div>
 		</main>
 	);

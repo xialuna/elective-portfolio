@@ -8,7 +8,7 @@ export default function Finals() {
 				<Hero
 					heading="Finals Compilation"
 					subHeading="This contains all quizzes, acivities, final exam, and reflection during our finals period."
-					tertiaryHeading="2nd Term"
+					tertiaryHeading="Second Term"
 					buttonTitle="View Compilation"
 				/>
 			</div>
