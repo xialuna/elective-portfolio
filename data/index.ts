@@ -1,9 +1,10 @@
 import midterms from "./midterms.json";
 
 export const navItems = [
-	{ name: "About", link: "#about" },
-	{ name: "CourseWork", link: "#coursework" },
-	{ name: "Contact", link: "#contact" },
+	{ name: "Home", link: "/" },
+	{ name: "Midterms", link: "/midterms" },
+	{ name: "Finals", link: "/finals" },
+	{ name: "Contact", link: "/contact" },
 ];
 
 export const coursework = [

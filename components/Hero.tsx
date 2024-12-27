@@ -5,7 +5,7 @@ import MagicButton from "./ui/MagicButton";
 
 export const Hero = ({ heading, subHeading, tertiaryHeading, buttonTitle }) => {
 	return (
-		<div className="pb-20 pt-36">
+		<div className="pb-20 pt-36" id="home">
 			{/* SPOTLIGHT*/}
 			<div>
 				<Spotlight
