@@ -1,10 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { HoverBorderGradient } from "./ui/HoverBorder";
+import midtermsData from "../data/midterms.json";
+
 const MidtermsWork = () => {
+	const [assignments, setAssignments] = useState(midtermsData.assignments);
+
 	return (
 		<>
 			<div className="w-full py-20">
@@ -13,39 +17,25 @@ const MidtermsWork = () => {
 				</div>
 
 				<div className="py-20 flex flex-col lg:flex-row items-center justify-center dark:bg-black-100 w-full gap-4 mx-auto px-8">
-					<Card
-						title="Munni is Aditi"
-						icon={<FrontLabel label="Assignment 1" />}
-					>
-						<CanvasRevealEffect
-							animationSpeed={3}
-							containerClassName="bg-purple-500"
-							colors={[[130, 86, 241]]}
-						/>
-					</Card>
-					<Card
-						title="Nisha is Munni"
-						icon={<FrontLabel label="Assignment 1" />}
-					>
-						<CanvasRevealEffect
-							animationSpeed={3}
-							containerClassName="bg-black"
-							colors={[[130, 86, 241]]}
-							dotSize={2}
-						/>
-						{/* Radial gradient for the cute fade */}
-						<div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
-					</Card>
-					<Card
-						title="Munni is Aditi"
-						icon={<FrontLabel label="Assignment 1" />}
-					>
-						<CanvasRevealEffect
-							animationSpeed={3}
-							containerClassName="bg-purple-500"
-							colors={[[130, 86, 241]]}
-						/>
-					</Card>
+					{assignments.map((assignment) => (
+						<Card
+							key={assignment.id}
+							frontContent={
+								<FrontLabel
+									label={assignment.label}
+									title={assignment.title}
+									date={assignment.date}
+								/>
+							}
+							reflection={assignment.reflection}
+						>
+							<CanvasRevealEffect
+								animationSpeed={3}
+								containerClassName="bg-purple-500"
+								colors={[[130, 86, 241]]}
+							/>
+						</Card>
+					))}
 				</div>
 			</div>
 		</>
@@ -55,13 +45,11 @@ const MidtermsWork = () => {
 export default MidtermsWork;
 
 const Card = ({
-	title,
-	icon,
+	frontContent,
 	children,
 	reflection,
 }: {
-	title: string;
-	icon: React.ReactNode;
+	frontContent: React.ReactNode;
 	children?: React.ReactNode;
 	reflection: string;
 }) => {
@@ -86,26 +74,32 @@ const Card = ({
 
 			<div className="relative z-20">
 				<div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full min-w-40  mx-auto flex items-center justify-center">
-					{icon}
+					{frontContent}
 				</div>
-				<h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-1 transition duration-200  text-center">
-					Lorem ipsum irut doren lorem desum dolor
+				<h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-1 transition duration-200  text-center">
+					{reflection}
 				</h2>
 			</div>
 		</div>
 	);
 };
 
-const FrontLabel = ({ label }: { label: string }) => {
+const FrontLabel = ({
+	label,
+	title,
+	date,
+}: {
+	label: string;
+	title: string;
+	date: string;
+}) => {
 	return (
 		<div className="flex flex-col justify-center items-center gap-5">
 			<HoverBorderGradient className="bg-black-100 text-sm">
 				{label}
 			</HoverBorderGradient>
-			<h2 className="text-xl">
-				Using Built-in Functions and Control Structures
-			</h2>
-			<p className="text-sm text-gray-300">04-19-2022</p>
+			<h2 className="text-xl font-semibold">{title}</h2>
+			<p className="text-sm text-gray-300">{date}</p>
 		</div>
 	);
 };
