@@ -5,41 +5,43 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { HoverBorderGradient } from "./ui/HoverBorder";
 import midtermsData from "../data/midterms.json";
-import MagicButton from "./ui/MagicButton";
 
-const MidtermsWork = () => {
-	const [assignments, setAssignments] = useState(midtermsData.assignments);
+const MidtermsWork = ({
+	data,
+	title,
+	subHeading,
+}: {
+	data: any[];
+	title: string;
+	subHeading: string;
+}) => {
+	const [items, setItems] = useState(data);
 
 	return (
 		<>
 			<div className="w-full py-20">
 				<div className="relative text-center">
-					<h2 className="text-3xl mb-4">Assignments</h2>
-					<p>
-						A collection of assignments showcasing my progress and learning
-						journey.
-					</p>
+					<h2 className="text-3xl mb-4">{title}</h2>
+					<p>{subHeading}</p>
 				</div>
 
 				<div
 					className={`py-11 grid items-center justify-center dark:bg-black-100 w-full gap-4 mx-auto px-8 ${
-						assignments.length === 2
-							? "grid-cols-2"
-							: "grid-cols-1 lg:grid-cols-3"
+						items.length === 2 ? "grid-cols-2" : "grid-cols-1 lg:grid-cols-3"
 					}`}
 					s
 				>
-					{assignments.map((assignment) => (
+					{items.map((item) => (
 						<Card
-							key={assignment.id}
+							key={item.id}
 							frontContent={
 								<FrontLabel
-									label={assignment.label}
-									title={assignment.title}
-									date={assignment.date}
+									label={item.label}
+									title={item.title}
+									date={item.date}
 								/>
 							}
-							reflection={assignment.reflection}
+							reflection={item.reflection}
 						>
 							<CanvasRevealEffect
 								animationSpeed={3}
