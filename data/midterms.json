@@ -6,7 +6,7 @@
 			"title": "Data Science",
 			"date": "October 2, 2024",
 			"grade": "19/20",
-			"reflection": "In this assignment, I gained foundational knowledge in data science, including understanding the principles and importance of data in decision-making processes.",
+			"reflection": "This assignment helped me learn the basics of data science. I now understand how important data is for making decisions and how tools like data visualization and prediction can make it easier to understand and use data. This gave me a better idea of what data science is all about and made me more interested in exploring it.",
 			"link": "midterms/assignment1.pdf"
 		},
 		{
@@ -15,7 +15,7 @@
 			"title": "Operators",
 			"date": "October 19, 2024",
 			"grade": "20/20",
-			"reflection": "This assignment helped me to deeply understand the use of operators in R, allowing me to effectively manipulate and analyze data using various operations.",
+			"reflection": "This gave me a good idea of how to use operators in R. It showed me how I can use them to solve problems and work with data in a simple way through exploring arithmetic, relational, logical, and other operators. It also helped me understand how to combine different operations to make my code work better.",
 			"link": "midterms/assignment2.pdf"
 		}
 	],
@@ -27,7 +27,7 @@
 			"type": "Individual Work",
 			"date": "September 29, 2024",
 			"grade": "20/20",
-			"reflection": "This activity was a great starting point to reflect on my personal journey and goals in data science, setting a foundation for future learning.",
+			"reflection": "This activity made me think about myself and my goals for this course. Writing about my traits and what I hope to achieve helped me focus on what I want to learn in the field of data science by enabling me to assess my current knowledge on the topics.",
 			"link": "midterms/act-allaboutme.pdf"
 		},
 		{
@@ -37,7 +37,7 @@
 			"type": "Individual Work",
 			"date": "October 14, 2024",
 			"grade": "48/50",
-			"reflection": "Through this activity, I explored the potential of big data and the role of data science in solving real-world problems. It enhanced my ability to understand data at scale.",
+			"reflection": "In this activity, I learned how big data and data science can help solve real problems. I found out how things like predictive analytics and clustering can give useful insights. It also made me aware of the challenges in using data, like managing poor-quality data and working with others to make it effective.",
 			"link": "midterms/act1.pdf"
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "Individual",
 			"date": "November 23, 2024",
 			"grade": "- / 20",
-			"reflection": "This activity introduced me to the fundamentals of handling data structures like vectors and data frames in R, which are essential for data manipulation.",
+			"reflection": "This activity helped me understand how to work with vectors and data frames in R. I learned how to get specific data, add new columns, and fix missing values. It was a good practice for working with structured data in simple ways.",
 			"link": "midterms/act3.pdf"
 		},
 		{
@@ -57,7 +57,7 @@
 			"type": "Individual",
 			"date": "November 23, 2024",
 			"grade": "- / 20",
-			"reflection": "I learned key techniques for manipulating and merging datasets in R, enabling me to prepare data for analysis more efficiently.",
+			"reflection": "This activity taught me how to combine and organize data so it’s easier to use. I practiced joining tables and grouping data, which made me realize how useful these skills are for working with larger datasets.",
 			"link": "midterms/act4.pdf"
 		},
 		{
@@ -67,7 +67,7 @@
 			"type": "Individual",
 			"date": "November 23, 2024",
 			"grade": "- / 20",
-			"reflection": "This activity helped me to understand the use of built-in functions and control structures in R, which are critical for writing efficient and reusable code.",
+			"reflection": "This activity showed me how to use R’s built-in functions and control structures to write better code. I learned how to make functions reusable and write code that checks conditions, which are useful skills for solving everyday coding problems.",
 			"link": "midterms/act5.pdf"
 		},
 		{
@@ -77,7 +77,7 @@
 			"type": "Individual",
 			"date": "November 23, 2024",
 			"grade": "- / 20",
-			"reflection": "Through this activity, I explored the APPLY family of functions in R, which streamlined repetitive tasks and improved my programming efficiency.",
+			"reflection": "Using the APPLY family of functions helped me see how to make my code shorter and simpler. I practiced applying these functions to tasks like calculating averages and filtering data. It made repetitive tasks much easier and saved a lot of time.",
 			"link": "midterms/act6.pdf"
 		}
 	]

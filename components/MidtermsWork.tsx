@@ -115,9 +115,12 @@ const Card = ({
 				<div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full min-w-40  mx-auto flex items-center justify-center">
 					{frontContent}
 				</div>
-				<h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-1 transition duration-200  text-center">
-					{reflection}
-				</h2>
+				<div className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-1 transition duration-200  text-center">
+					<span className="border border-white rounded-2xl px-4 py-1">
+						Reflection
+					</span>
+					<h2 className="pt-5">{reflection}</h2>
+				</div>
 			</div>
 		</div>
 	);
