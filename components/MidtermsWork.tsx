@@ -22,7 +22,7 @@ const MidtermsWork = ({
 		<>
 			<div className="w-full py-20">
 				<div className="relative text-center">
-					<h2 className="text-3xl mb-4">{title}</h2>
+					<h2 className="text-4xl mb-4 font-semibold">{title}</h2>
 					<p>{subHeading}</p>
 				</div>
 
@@ -138,7 +138,13 @@ const FrontLabel = ({
 				{label}
 			</HoverBorderGradient>
 			<div>
-				<h2 className="text-3xl font-semibold mb-2">{title}</h2>
+				<h2
+					className={`font-semibold mb-2 ${
+						title.trim().split(" ").length <= 2 ? "text-3xl" : "text-2xl"
+					}`}
+				>
+					{title}
+				</h2>
 				<p className="text-sm text-gray-300">{date}</p>
 			</div>
 		</div>
