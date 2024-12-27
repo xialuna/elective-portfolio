@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { HoverBorderGradient } from "./ui/HoverBorder";
-import midtermsData from "../data/midterms.json";
+import { X } from "lucide-react";
 
 const MidtermsWork = ({
 	data,
@@ -16,6 +16,7 @@ const MidtermsWork = ({
 	subHeading: string;
 }) => {
 	const [items, setItems] = useState(data);
+	const [selectedItem, setSelectedItem] = useState<any | null>(null);
 
 	return (
 		<>
@@ -41,6 +42,9 @@ const MidtermsWork = ({
 								/>
 							}
 							reflection={item.reflection}
+							onClick={() => {
+								setSelectedItem(item);
+							}}
 						>
 							<CanvasRevealEffect
 								animationSpeed={3}
@@ -51,6 +55,25 @@ const MidtermsWork = ({
 					))}
 				</div>
 			</div>
+			{/* PDF Popup */}
+			{selectedItem && (
+				<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+					<div className="bg-black-100 p-3 pt-12 w-3/4 h-3/4 relative rounded-lg ">
+						<p className="absolute top-2 left-2 p-2">{`${selectedItem.label}: ${selectedItem.title}`}</p>
+						<button
+							className="absolute top-2 right-2 text-white p-2 rounded"
+							onClick={() => setSelectedItem(null)}
+						>
+							<X size={24} />
+						</button>
+						<iframe
+							src={selectedItem.link}
+							className="w-full h-full"
+							title="PDF Viewer"
+						></iframe>
+					</div>
+				</div>
+			)}
 		</>
 	);
 };
@@ -61,16 +84,19 @@ const Card = ({
 	frontContent,
 	children,
 	reflection,
+	onClick,
 }: {
 	frontContent: React.ReactNode;
 	children?: React.ReactNode;
 	reflection: string;
+	onClick: () => void;
 }) => {
 	const [hovered, setHovered] = React.useState(false);
 	return (
 		<div
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
+			onClick={onClick}
 			className="border rounded-lg border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  w-full mx-auto p-4 relative h-[20rem]"
 		>
 			<AnimatePresence>
