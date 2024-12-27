@@ -7,7 +7,7 @@
 			"date": "October 2, 2024",
 			"grade": "19/20",
 			"reflection": "In this assignment, I gained foundational knowledge in data science, including understanding the principles and importance of data in decision-making processes.",
-			"link": "assignment1.pdf"
+			"link": "midterms/assignment1.pdf"
 		},
 		{
 			"id": 2,
@@ -16,7 +16,7 @@
 			"date": "October 19, 2024",
 			"grade": "20/20",
 			"reflection": "This assignment helped me to deeply understand the use of operators in R, allowing me to effectively manipulate and analyze data using various operations.",
-			"link": "assignment2.pdf"
+			"link": "midterms/assignment2.pdf"
 		}
 	],
 	"activities": [
@@ -28,7 +28,7 @@
 			"date": "September 29, 2024",
 			"grade": "20/20",
 			"reflection": "This activity was a great starting point to reflect on my personal journey and goals in data science, setting a foundation for future learning.",
-			"link": "act-allaboutme.pdf"
+			"link": "midterms/act-allaboutme.pdf"
 		},
 		{
 			"id": 2,
@@ -38,7 +38,7 @@
 			"date": "October 14, 2024",
 			"grade": "48/50",
 			"reflection": "Through this activity, I explored the potential of big data and the role of data science in solving real-world problems. It enhanced my ability to understand data at scale.",
-			"link": "act1.pdf"
+			"link": "midterms/act1.pdf"
 		},
 		{
 			"id": 3,
@@ -48,7 +48,7 @@
 			"date": "November 23, 2024",
 			"grade": "- / 20",
 			"reflection": "This activity introduced me to the fundamentals of handling data structures like vectors and data frames in R, which are essential for data manipulation.",
-			"link": "act3.pdf"
+			"link": "midterms/act3.pdf"
 		},
 		{
 			"id": 4,
@@ -58,7 +58,7 @@
 			"date": "November 23, 2024",
 			"grade": "- / 20",
 			"reflection": "I learned key techniques for manipulating and merging datasets in R, enabling me to prepare data for analysis more efficiently.",
-			"link": "act4.pdf"
+			"link": "midterms/act4.pdf"
 		},
 		{
 			"id": 5,
@@ -68,7 +68,7 @@
 			"date": "November 23, 2024",
 			"grade": "- / 20",
 			"reflection": "This activity helped me to understand the use of built-in functions and control structures in R, which are critical for writing efficient and reusable code.",
-			"link": "act5.pdf"
+			"link": "midterms/act5.pdf"
 		},
 		{
 			"id": 6,
@@ -78,7 +78,7 @@
 			"date": "November 23, 2024",
 			"grade": "- / 20",
 			"reflection": "Through this activity, I explored the APPLY family of functions in R, which streamlined repetitive tasks and improved my programming efficiency.",
-			"link": "act6.pdf"
+			"link": "midterms/act6.pdf"
 		}
 	]
 }

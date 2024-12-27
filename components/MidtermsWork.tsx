@@ -29,7 +29,6 @@ const MidtermsWork = ({
 					className={`py-11 grid items-center justify-center dark:bg-black-100 w-full gap-4 mx-auto px-8 ${
 						items.length === 2 ? "grid-cols-2" : "grid-cols-1 lg:grid-cols-3"
 					}`}
-					s
 				>
 					{items.map((item) => (
 						<Card
