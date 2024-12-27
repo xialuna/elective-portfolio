@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { HoverBorderGradient } from "./ui/HoverBorder";
 import midtermsData from "../data/midterms.json";
+import MagicButton from "./ui/MagicButton";
 
 const MidtermsWork = () => {
 	const [assignments, setAssignments] = useState(midtermsData.assignments);
@@ -12,11 +13,22 @@ const MidtermsWork = () => {
 	return (
 		<>
 			<div className="w-full py-20">
-				<div className="relative">
-					<h2 className="text-3xl text-center">Assignments</h2>
+				<div className="relative text-center">
+					<h2 className="text-3xl mb-4">Assignments</h2>
+					<p>
+						A collection of assignments showcasing my progress and learning
+						journey.
+					</p>
 				</div>
 
-				<div className="py-20 flex flex-col lg:flex-row items-center justify-center dark:bg-black-100 w-full gap-4 mx-auto px-8">
+				<div
+					className={`py-11 grid items-center justify-center dark:bg-black-100 w-full gap-4 mx-auto px-8 ${
+						assignments.length === 2
+							? "grid-cols-2"
+							: "grid-cols-1 lg:grid-cols-3"
+					}`}
+					s
+				>
 					{assignments.map((assignment) => (
 						<Card
 							key={assignment.id}
@@ -58,7 +70,7 @@ const Card = ({
 		<div
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
-			className="border rounded-lg border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[20rem]"
+			className="border rounded-lg border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  w-full mx-auto p-4 relative h-[20rem]"
 		>
 			<AnimatePresence>
 				{hovered && (
@@ -94,12 +106,14 @@ const FrontLabel = ({
 	date: string;
 }) => {
 	return (
-		<div className="flex flex-col justify-center items-center gap-5">
+		<div className="flex flex-col justify-center items-center gap-6">
 			<HoverBorderGradient className="bg-black-100 text-sm">
 				{label}
 			</HoverBorderGradient>
-			<h2 className="text-xl font-semibold">{title}</h2>
-			<p className="text-sm text-gray-300">{date}</p>
+			<div>
+				<h2 className="text-3xl font-semibold mb-2">{title}</h2>
+				<p className="text-sm text-gray-300">{date}</p>
+			</div>
 		</div>
 	);
 };
