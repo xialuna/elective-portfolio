@@ -15,10 +15,13 @@ export const Hero = ({ heading, subHeading, tertiaryHeading, buttonTitle }) => {
 
 				<Spotlight
 					className="top-10 left-full h-[80vh] w-[50vw]"
-					fill="purple"
+					fill="yellow-100"
 				/>
 
-				<Spotlight className="top-28 left-13 h-[80vh] w-[50vw]" fill="purple" />
+				<Spotlight
+					className="top-28 left-13 h-[80vh] w-[50vw]"
+					fill="yellow-100"
+				/>
 			</div>
 
 			{/* GRID */}

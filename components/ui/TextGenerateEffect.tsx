@@ -39,7 +39,7 @@ export const TextGenerateEffect = ({
 							key={word + idx}
 							// turn Xian Hui Cheng into a highlighted one
 							className={`${
-								idx > 1 ? "text-purple" : "dark:text-white text-black "
+								idx > 1 ? "text-yellow-300" : "dark:text-white text-black "
 							} opacity-0`}
 							style={{
 								filter: filter ? "blur(10px)" : "none",

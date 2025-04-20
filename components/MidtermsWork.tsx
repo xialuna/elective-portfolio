@@ -48,7 +48,7 @@ const MidtermsWork = ({
 						>
 							<CanvasRevealEffect
 								animationSpeed={3}
-								containerClassName="bg-purple-500"
+								containerClassName="bg-yellow-100-500"
 								colors={[[130, 86, 241]]}
 							/>
 						</Card>

@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 import svgToDataUri from "mini-svg-data-uri";
 
 import colors from "tailwindcss/colors";
-import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette.js";
 
 const config = {
 	darkMode: ["class"],
@@ -27,7 +27,7 @@ const config = {
 			colors: {
 				black: {
 					DEFAULT: "#000",
-					100: "#010214",
+					100: "#070300",
 					200: "rgba(17, 25, 40, 0.75)",
 					300: "rgba(255, 255, 255, 0.125)",
 				},
@@ -38,6 +38,12 @@ const config = {
 				},
 				blue: {
 					"100": "#0345FB",
+				},
+				yellow: {
+					100: "#FFF3CD",
+					200: "#FFE386",
+					300: "#FFDB64",
+					400: "#FFB639",
 				},
 				purple: "#8256F1",
 				border: "hsl(var(--border))",
