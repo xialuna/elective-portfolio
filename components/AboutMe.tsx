@@ -6,9 +6,7 @@ const AboutMe = () => {
 		<div className="py-20 relative container mx-auto">
 			<div className="flex justify-center items-center gap-10">
 				<div className="flex-1 space-y-3 ">
-					<h2 className="uppercase tracking-widest text-sm text-yellow-300 font-bold">
-						About Me
-					</h2>
+					<h2 className="sub-heading text-yellow-300 font-bold">About Me</h2>
 					<p>
 						I’m a 3rd year BSIT student at PUP-Manila with a passion for tech,
 						leadership, and community. I currently the{" "}

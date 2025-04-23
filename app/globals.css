@@ -93,4 +93,8 @@ body {
 	.black-gradient {
 		background: linear-gradient(90deg, #010214 0%, #010214 100%);
 	}
+
+	.sub-heading {
+		@apply uppercase tracking-widest text-sm;
+	}
 }
