@@ -25,7 +25,7 @@ const CourseWork = () => {
 		},
 	];
 	return (
-		<div className="py-36">
+		<div className="py-20">
 			<TypewriterEffect words={words} />
 
 			{/* CARDS */}
