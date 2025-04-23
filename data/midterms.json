@@ -3,82 +3,79 @@
 		{
 			"id": 1,
 			"label": "Assignment 1",
-			"title": "Data Science",
-			"date": "October 2, 2024",
-			"grade": "19/20",
-			"reflection": "This assignment helped me learn the basics of data science. I now understand how important data is for making decisions and how tools like data visualization and prediction can make it easier to understand and use data. This gave me a better idea of what data science is all about and made me more interested in exploring it.",
+			"title": "Exploring the Landscape of Data Mining",
+			"date": "March 7, 2025",
+			"reflection": "While working on this assignment, I deepened my understanding of the various approaches and applications in data mining. It was enlightening to explore both the theoretical underpinnings and the practical implications of mining data to discover meaningful patterns and insights. This exercise improved my analytical thinking and also taught me how to better evaluate data mining models for real-world problems.",
 			"link": "midterms/assignment1.pdf"
 		},
 		{
 			"id": 2,
 			"label": "Assignment 2",
-			"title": "Operators",
-			"date": "October 19, 2024",
-			"grade": "20/20",
-			"reflection": "This gave me a good idea of how to use operators in R. It showed me how I can use them to solve problems and work with data in a simple way through exploring arithmetic, relational, logical, and other operators. It also helped me understand how to combine different operations to make my code work better.",
-			"link": "midterms/assignment2.pdf"
+			"title": "All About Me",
+			"date": "March 9, 2025",
+			"reflection": "Creating this reflection allowed me to examine my personal and academic journey in data science. It was a chance to tell my goals, the learning styles that resonate with me, and the skills I aim to develop further. I appreciated the opportunity to think about what drives me, such as curiosity and a desire for growth, and how that can shape my learning and future contributions in the field.",
+			"link": "midterms/about-me.pdf"
 		}
 	],
+
 	"activities": [
 		{
 			"id": 1,
-			"label": "All About Me",
-			"title": "Introduction",
-			"type": "Individual Work",
-			"date": "September 29, 2024",
-			"grade": "20/20",
-			"reflection": "This activity made me think about myself and my goals for this course. Writing about my traits and what I hope to achieve helped me focus on what I want to learn in the field of data science by enabling me to assess my current knowledge on the topics.",
-			"link": "midterms/act-allaboutme.pdf"
+			"label": "Activity 1",
+			"title": "Data Mining Scenario Challenge",
+			"date": "March 17, 2025",
+			"reflection": "This activity gave me hands-on experience in applying data science techniques to real-world urban challenges. I learned how traffic data can be harnessed to enhance city planning and public safety, using time series analysis, classification, and anomaly detection. It was eye-opening to see the role of data in making strategic decisions for smarter urban mobility.",
+			"link": "midterms/activity1.pdf"
 		},
 		{
 			"id": 2,
-			"label": "Activity 1",
-			"title": "Leveraging Big Data and Data Science",
-			"type": "Individual Work",
-			"date": "October 14, 2024",
-			"grade": "48/50",
-			"reflection": "In this activity, I learned how big data and data science can help solve real problems. I found out how things like predictive analytics and clustering can give useful insights. It also made me aware of the challenges in using data, like managing poor-quality data and working with others to make it effective.",
-			"link": "midterms/act1.pdf"
+			"label": "Activity 2",
+			"title": "Data Mining Scenario Challenge Video Presentation",
+			"date": "March 18, 2025",
+			"reflection": "Preparing the video presentation allowed me to improve my ability to communicate technical insights in a clear and engaging manner. I learned the importance of storytelling in data science—conveying how data mining techniques like ARIMA forecasting and anomaly detection can lead to impactful changes in traffic management.",
+			"link": "https://youtu.be/2p0WsvuolG0"
 		},
 		{
 			"id": 3,
 			"label": "Activity 3",
-			"title": "Working with Vectors and Data Frames",
-			"type": "Individual",
-			"date": "November 23, 2024",
-			"grade": "- / 20",
-			"reflection": "This activity helped me understand how to work with vectors and data frames in R. I learned how to get specific data, add new columns, and fix missing values. It was a good practice for working with structured data in simple ways.",
-			"link": "midterms/act3.pdf"
+			"title": "Naive Bayesian",
+			"date": "April 4, 2025",
+			"reflection": "In this activity, I explored the fundamentals of the Naive Bayes classifier and how it can be used in predictive modeling. Working through practical examples helped reinforce the theoretical concepts and showcased the classifier’s strength in handling categorical data efficiently.",
+			"link": "midterms/activity3.pdf"
 		},
 		{
 			"id": 4,
 			"label": "Activity 4",
-			"title": "Manipulating and Merging Data",
-			"type": "Individual",
-			"date": "November 23, 2024",
-			"grade": "- / 20",
-			"reflection": "This activity taught me how to combine and organize data so it’s easier to use. I practiced joining tables and grouping data, which made me realize how useful these skills are for working with larger datasets.",
-			"link": "midterms/act4.pdf"
+			"title": "Naive Bayesian",
+			"date": "April 9, 2025",
+			"reflection": "This follow-up activity on Naive Bayes deepened my understanding of probabilistic models. By comparing results and tweaking parameters, I learned how model assumptions affect performance and how to interpret classification outputs in context.",
+			"link": "midterms/activity4.pdf"
+		}
+	],
+	"quizzes": [
+		{
+			"id": 1,
+			"label": "Pre-Quiz",
+			"title": "Data Mining",
+			"date": "March 11, 2025",
+			"reflection": "The pre-quiz served as a foundational check of my understanding of basic data mining concepts. It helped me identify areas I needed to revisit, such as data types and basic mining techniques. This set the stage for more complex topics and provided a useful benchmark for measuring my progress throughout the course.",
+			"link": "midterms/pre-quiz.pdf"
 		},
 		{
-			"id": 5,
-			"label": "Activity 5",
-			"title": "Using Built-in Functions and Control Structures",
-			"type": "Individual",
-			"date": "November 23, 2024",
-			"grade": "- / 20",
-			"reflection": "This activity showed me how to use R’s built-in functions and control structures to write better code. I learned how to make functions reusable and write code that checks conditions, which are useful skills for solving everyday coding problems.",
-			"link": "midterms/act5.pdf"
+			"id": 2,
+			"label": "Quiz 1",
+			"title": "Data Mining and Introduction",
+			"date": "March 25, 2025",
+			"reflection": "Quiz 1 deepened my appreciation for the interdisciplinary nature of data mining. I learned about different kinds of data that can be mined—like time series, spatial, and multimedia data and the corresponding techniques used for each. This broadened my perspective on how data mining can be tailored to various real-world problems.",
+			"link": "midterms/quiz1.pdf"
 		},
 		{
-			"id": 6,
-			"label": "Activity 6",
-			"title": "Using APPLY Family FUNCTIONS",
-			"type": "Individual",
-			"date": "November 23, 2024",
-			"grade": "- / 20",
-			"reflection": "Using the APPLY family of functions helped me see how to make my code shorter and simpler. I practiced applying these functions to tasks like calculating averages and filtering data. It made repetitive tasks much easier and saved a lot of time.",
-			"link": "midterms/act6.pdf"
+			"id": 3,
+			"label": "Long Quiz",
+			"title": "Association Rules and Naive Bayesian",
+			"date": "April 4, 2025",
+			"reflection": "This long quiz allowed me to integrate and apply concepts from different data mining techniques. I explored different datas that can be mind. I also grasped the Naive Bayes classifier’s reliance on probability theory and conditional independence. These concepts not only improved my technical understanding but also demonstrated how to interpret model outputs in meaningful ways.",
+			"link": "midterms/longquiz.pdf"
 		}
 	]
 }

@@ -29,6 +29,11 @@ export default function Midterms() {
 					title="Activities"
 					subHeading="Collaborative and individual activities showcasing applied learning."
 				/>
+				<MidtermsWork
+					data={midtermsData.quizzes}
+					title="Quizzes"
+					subHeading="Quizzes that test my understanding of the course material."
+				/>
 			</div>
 		</main>
 	);

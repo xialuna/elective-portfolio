@@ -60,12 +60,7 @@ export const CardSpotlight = ({
 					<CanvasRevealEffect
 						animationSpeed={5}
 						containerClassName="bg-transparent absolute inset-0 pointer-events-none"
-						colors={[
-							[255, 243, 205], // yellow.100
-							[255, 227, 134], // yellow.200
-							[255, 219, 100], // yellow.300
-							[255, 182, 57], // yellow.400
-						]}
+						colors={[[255, 182, 57]]}
 						dotSize={3}
 					/>
 				)}

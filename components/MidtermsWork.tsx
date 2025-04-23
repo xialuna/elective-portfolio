@@ -18,6 +18,9 @@ const MidtermsWork = ({
 	const [items, setItems] = useState(data);
 	const [selectedItem, setSelectedItem] = useState<any | null>(null);
 
+	const isYouTubeLink = (link: string) =>
+		link.includes("youtube.com") || link.includes("youtu.be");
+
 	return (
 		<>
 			<div className="w-full py-20">
@@ -48,29 +51,45 @@ const MidtermsWork = ({
 						>
 							<CanvasRevealEffect
 								animationSpeed={3}
-								containerClassName="bg-yellow-100-500"
-								colors={[[130, 86, 241]]}
+								containerClassName="bg-black-100"
+								colors={[[255, 182, 57]]}
 							/>
 						</Card>
 					))}
 				</div>
 			</div>
-			{/* PDF Popup */}
+
+			{/* Popup Modal */}
 			{selectedItem && (
 				<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-					<div className="bg-black-100 p-3 pt-12 w-3/4 h-3/4 relative rounded-lg ">
-						<p className="absolute top-2 left-2 p-2">{`${selectedItem.label}: ${selectedItem.title}`}</p>
+					<div className="bg-black-100 p-3 pt-12 w-3/4 h-3/4 relative rounded-lg">
+						<p className="absolute top-2 left-2 p-2 text-white">{`${selectedItem.label}: ${selectedItem.title}`}</p>
 						<button
 							className="absolute top-2 right-2 text-white p-2 rounded"
 							onClick={() => setSelectedItem(null)}
 						>
 							<X size={24} />
 						</button>
-						<iframe
-							src={selectedItem.link}
-							className="w-full h-full"
-							title="PDF Viewer"
-						></iframe>
+
+						{/* Conditional rendering for PDF or YouTube */}
+						{isYouTubeLink(selectedItem.link) ? (
+							<div className="flex items-center justify-center h-full">
+								<a
+									href={selectedItem.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-black bg-yellow-400 px-6 py-3 rounded hover:bg-yellow-300 transition"
+								>
+									Watch Video on YouTube
+								</a>
+							</div>
+						) : (
+							<iframe
+								src={selectedItem.link}
+								className="w-full h-full"
+								title="PDF Viewer"
+							></iframe>
+						)}
 					</div>
 				</div>
 			)}
