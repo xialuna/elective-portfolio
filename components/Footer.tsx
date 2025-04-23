@@ -33,18 +33,18 @@ const icons = [
 
 const Footer = () => {
 	return (
-		<div className="flex py-7 px-14 border-t border-yellow-100/10">
-			<div className="flex-1 container space-y-5">
-				<span className="sub-heading text-yellow-200 font-semibold">
+		<div className="flex flex-col md:flex-row py-7 px-6 md:px-14 border-t border-yellow-100/10 items-center md:items-start text-center md:text-left gap-6 md:gap-0">
+			<div className="flex-1 space-y-3">
+				<span className="sub-heading text-yellow-200 font-semibold block">
 					Connect
 				</span>
 				<p className="text-lg">xianhuicheng01@gmail.com</p>
 			</div>
-			<div className="flex-1 space-y-5">
-				<span className="sub-heading text-yellow-200 font-semibold">
+			<div className="flex-1 space-y-3">
+				<span className="sub-heading text-yellow-200 font-semibold block">
 					Follow
 				</span>
-				<div className="flex gap-4">
+				<div className="flex justify-center md:justify-start flex-wrap gap-4">
 					{icons.map(({ name, svg, url }, index) => (
 						<a
 							key={index}

@@ -4,10 +4,12 @@ import CardImage from "./ui/CardImage";
 
 const AboutMe = () => {
 	return (
-		<div className="py-16 relative container mx-auto" id="about-me">
-			<div className="flex justify-center items-center ">
-				<div className="flex-1 space-y-3 ">
-					<h2 className="sub-heading text-yellow-300 font-bold">About Me</h2>
+		<div className="py-16 relative container mx-auto px-4" id="about-me">
+			<div className="flex flex-col md:flex-row justify-center items-center gap-8">
+				<div className="flex-1 space-y-3">
+					<h2 className="sub-heading text-yellow-300 font-bold text-center md:text-start">
+						About Me
+					</h2>
 					<p>
 						I’m a 3rd year BSIT student at PUP-Manila with a passion for tech,
 						leadership, and community. I currently the{" "}
