@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
 	motion,
 	AnimatePresence,
@@ -20,26 +20,39 @@ export const FloatingNav = ({
 	}[];
 	className?: string;
 }) => {
-	const { scrollYProgress } = useScroll();
+	const { scrollY } = useScroll();
+	const [visible, setVisible] = useState(true);
+	const lastScrollY = useRef(0);
+	const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-	const [visible, setVisible] = useState(false);
+	useMotionValueEvent(scrollY, "change", (latest) => {
+		const current = latest;
+		const direction = current - lastScrollY.current;
 
-	useMotionValueEvent(scrollYProgress, "change", (current) => {
-		// Check if current is not undefined and is a number
-		if (typeof current === "number") {
-			const direction = current! - scrollYProgress.getPrevious()!;
-
-			if (scrollYProgress.get() < 0.05) {
-				setVisible(false);
-			} else {
-				if (direction < 0) {
-					setVisible(true);
-				} else {
-					setVisible(false);
-				}
-			}
+		if (timeoutRef.current) {
+			clearTimeout(timeoutRef.current);
 		}
+
+		if (direction > 0) {
+			setVisible(false);
+		}
+
+		if (direction < 0) {
+			setVisible(true);
+		}
+
+		timeoutRef.current = setTimeout(() => {
+			setVisible(true);
+		}, 200);
+
+		lastScrollY.current = current;
 	});
+
+	useEffect(() => {
+		return () => {
+			if (timeoutRef.current) clearTimeout(timeoutRef.current);
+		};
+	}, []);
 
 	return (
 		<AnimatePresence mode="wait">
@@ -56,16 +69,16 @@ export const FloatingNav = ({
 					duration: 0.2,
 				}}
 				className={cn(
-					"flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black-100 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2  items-center justify-center space-x-4",
+					"flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black-100 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2 items-center justify-center space-x-4",
 					className
 				)}
 			>
-				{navItems.map((navItem: any, idx: number) => (
+				{navItems.map((navItem, idx) => (
 					<Link
-						key={`link=${idx}`}
+						key={`link-${idx}`}
 						href={navItem.link}
 						className={cn(
-							"relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+							"relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-yellow-300 hover:text-neutral-500"
 						)}
 					>
 						<span className="block sm:hidden">{navItem.icon}</span>
