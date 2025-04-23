@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import CardImage from "./ui/CardImage";
 
 const AboutMe = () => {
 	return (
@@ -27,15 +28,7 @@ const AboutMe = () => {
 					</p>
 				</div>
 				<div className="flex-1 flex justify-center">
-					<div className="relative group w-[400px] h-[400px] transition duration-300 ease-in-out">
-						<Image
-							src="/xian_pic.png"
-							alt="Xian's picture"
-							fill
-							className="object-cover rounded-md transition duration-300 group-hover:shadow-[0_0_30px_10px_rgba(255,227,134,0.6)]"
-						/>
-						<div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 via-yellow-300 to-yellow-200 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-md" />
-					</div>
+					<CardImage />
 				</div>
 			</div>
 		</div>
