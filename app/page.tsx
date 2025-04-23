@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe";
 import CourseWork from "@/components/CourseWork";
 import { Hero } from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
@@ -13,6 +14,7 @@ export default function Home() {
 					subHeading="I'm a Software Developer focused on building user-focused interfaces"
 					buttonTitle="Explore Portfolio"
 				/>
+				<AboutMe />
 				<CourseWork />
 			</div>
 		</main>

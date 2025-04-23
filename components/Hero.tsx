@@ -32,7 +32,7 @@ export const Hero = ({ heading, subHeading, tertiaryHeading, buttonTitle }) => {
 			{/* HEADER */}
 			<div className="flex justify-center relative my-20 z-10">
 				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-					<h2 className="uppercase tracking-widest text-xs text] flex--center text-white max-w-80">
+					<h2 className="uppercase tracking-widest text-xs relative text-center">
 						{tertiaryHeading}
 					</h2>
 

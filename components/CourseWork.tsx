@@ -25,10 +25,8 @@ const CourseWork = () => {
 		},
 	];
 	return (
-		<div className="py-20">
-			<div className="relative">
-				<TypewriterEffect words={words} />
-			</div>
+		<div className="py-36">
+			<TypewriterEffect words={words} />
 
 			{/* CARDS */}
 			<div className="flex flex-wrap items-center justify-center gap-20 sm:gap-4 -m-5">
