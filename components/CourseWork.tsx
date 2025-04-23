@@ -21,7 +21,7 @@ const CourseWork = () => {
 		},
 		{
 			text: "courseworks",
-			className: "text-yellow-100",
+			className: "text-yellow-300",
 		},
 	];
 	return (
