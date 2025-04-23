@@ -17,7 +17,7 @@ const AboutMe = () => {
 						<span className="text-yellow-200"> Software Developer at CFL </span>
 						and{" "}
 						<span className="text-yellow-200">
-							Freelance Ful-stack Developer at Nuworks
+							Freelance Full-stack Developer at Nuworks
 						</span>
 						, building real-world solutions. <br />
 						<br />
