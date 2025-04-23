@@ -1,12 +1,24 @@
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 
-export const Hero = ({ heading, subHeading, tertiaryHeading, buttonTitle }) => {
+export const Hero = ({
+	heading,
+	subHeading,
+	tertiaryHeading,
+	buttonTitle,
+	redirect,
+}) => {
+	const handleScroll = () => {
+		const section = document.querySelector(`#${redirect}`);
+		section?.scrollIntoView({ behavior: "smooth" });
+	};
+
 	return (
 		<div className="pb-20 pt-36" id="home">
-			{/* SPOTLIGHT*/}
+			{/* SPOTLIGHT */}
 			<div>
 				<Spotlight
 					className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -25,7 +37,7 @@ export const Hero = ({ heading, subHeading, tertiaryHeading, buttonTitle }) => {
 			</div>
 
 			{/* GRID */}
-			<div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.02] bg-grid-white/[0.01] flex items-center justify-center absolute top-0 left-0">
+			<div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.02] bg-grid-white/[0.01] flex items-center justify-center absolute top-0 left-0">
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 			</div>
 
@@ -45,9 +57,7 @@ export const Hero = ({ heading, subHeading, tertiaryHeading, buttonTitle }) => {
 						{subHeading}
 					</p>
 
-					<a href="#about">
-						<MagicButton title={buttonTitle} />
-					</a>
+					<MagicButton title={buttonTitle} handleClick={handleScroll} />
 				</div>
 			</div>
 		</div>

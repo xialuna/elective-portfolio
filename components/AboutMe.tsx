@@ -4,7 +4,7 @@ import CardImage from "./ui/CardImage";
 
 const AboutMe = () => {
 	return (
-		<div className="py-16 relative container mx-auto">
+		<div className="py-16 relative container mx-auto" id="about-me">
 			<div className="flex justify-center items-center ">
 				<div className="flex-1 space-y-3 ">
 					<h2 className="sub-heading text-yellow-300 font-bold">About Me</h2>

@@ -15,12 +15,15 @@ export default function Home() {
 						heading="Hi, I'm Xian Cheng"
 						subHeading="I'm a Software Developer focused on building user-focused interfaces"
 						buttonTitle="Explore Portfolio"
+						redirect="about-me"
 					/>
 					<AboutMe />
 					<CourseWork />
 				</div>
 			</main>
-			<Footer />
+			<footer id="contact">
+				<Footer />
+			</footer>
 		</>
 	);
 }
